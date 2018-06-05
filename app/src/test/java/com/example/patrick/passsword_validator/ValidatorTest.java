@@ -16,6 +16,13 @@ public class ValidatorTest {
     @Test
     public void isLessThan8Test(){
         assertTrue(!Validator.validate("1234"));
-        assertTrue(Validator.validate("12345678"));
+        assertTrue(Validator.validate("12B45678"));
     }
+
+    @Test
+    public void hasCapital(){
+        assertTrue(!Validator.validate("12345678"));
+        assertTrue(Validator.validate("A1234567"));
+    }
+
 }
