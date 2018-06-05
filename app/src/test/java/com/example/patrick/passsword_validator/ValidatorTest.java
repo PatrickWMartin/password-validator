@@ -13,4 +13,9 @@ public class ValidatorTest {
         assertTrue(!Validator.validate("pAsSWoRd"));
     }
 
+    @Test
+    public void isLessThan8Test(){
+        assertTrue(!Validator.validate("1234"));
+        assertTrue(Validator.validate("12345678"));
+    }
 }
