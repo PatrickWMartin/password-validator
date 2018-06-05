@@ -8,7 +8,7 @@ public class ValidatorTest {
     @Test
     public void isPasswordTest(){
         assertTrue(!Validator.validate("password"));
-        assertTrue(Validator.validate("thisshouldpass"));
+        assertTrue(Validator.validate("Thisshouldpass"));
         assertTrue(!Validator.validate("PASSWORD"));
         assertTrue(!Validator.validate("pAsSWoRd"));
     }
