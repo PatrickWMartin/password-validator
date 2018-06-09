@@ -27,7 +27,15 @@ public class EspressoTest {
 
     @Test
     public void findButton() {
-        onView(withId(R.id.mainButton));
+        onView(withId(R.id.validateButton));
+    }
+    @Test
+    public void findInput(){
+        onView(withId(R.id.passwordField));
+    }
+    @Test
+    public void findStrengthText(){
+        onView(withId(R.id.strengthText));
     }
 
 
