@@ -44,7 +44,13 @@ public class EspressoTest {
     public void strongPasswordTest(){
         onView(withId(R.id.passwordField)).perform(typeText("Thisshouldpass1"),closeSoftKeyboard());
         onView(withId(R.id.validateButton)).perform(click());
-        onView(withId(R.id.strengthText)).check(matches(withText("Strong")));
+        onView(withId(R.id.strengthText)).check(matches(withText("Good")));
+    }
+    @Test
+    public void weakPasswordTest(){
+        onView(withId(R.id.passwordField)).perform(typeText("1"),closeSoftKeyboard());
+        onView(withId(R.id.validateButton)).perform(click());
+        onView(withId(R.id.strengthText)).check(matches(withText("Weak")));
     }
 
 

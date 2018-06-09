@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         String test = input.getText().toString();
         if(Validator.validate( test) == true) {
 
-            output.setText("Strong");
+            output.setText("Good");
         }
 
     }
