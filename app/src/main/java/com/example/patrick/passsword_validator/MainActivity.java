@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
             output.setText("Good");
         }
-
+        else
+            output.setText("Weak");
     }
 }
